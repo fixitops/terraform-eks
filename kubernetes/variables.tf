@@ -1,14 +1,24 @@
 variable "namespace_name" {
-  default = "demo-service"
+  default = "nginx"
   type    = "string"
 }
 
-variable "nginx_pod_name" {
-  default = "demo-service"
+variable "nginx_deployment_name" {
+  default = "nginx"
+  type    = "string"
+}
+
+variable "nginx_service_name" {
+  default = "nginx"
   type    = "string"
 }
 
 variable "nginx_pod_image" {
   default = "nginx:latest"
+  type    = "string"
+}
+
+variable "nginx_pod_replica" {
+  default = "3"
   type    = "string"
 }
